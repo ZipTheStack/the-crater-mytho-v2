@@ -22,25 +22,42 @@
 
 ## Design Direction
 
+### Design Philosophy
+**Clean. Professional. Product-focused.**
+
+The landing page should feel like a premium business tool, not a novelty. Let the product mockups be the hero. The ink theme lives in the brand identity (colors, subtle textures, logo) — not as scroll gimmicks or elaborate animations.
+
 ### Visual Style
-- **Premium & High-Tech**: Think Apple product pages meets Notion meets Linear
-- **Dark mode primary**: Deep blacks/dark grays with accent lighting
-- **Accent colors**: Subtle ink blue (#1a365d), gold highlights (#d4af37) for premium feel
-- **Typography**: Clean, modern sans-serif (Inter, SF Pro, or similar)
-- **Imagery**: Glowing UI mockups, floating dashboard elements, subtle particle effects
+- **Minimal & Sophisticated**: Think Linear, Stripe, Notion — generous whitespace, clear hierarchy
+- **Dark mode primary**: Rich blacks (#0a0a0a, #111111) with careful contrast
+- **Color palette**:
+  - **Primary**: Black ink (#0a0a0a) — the color authors actually write with
+  - **Accent**: Gold (#d4af37) — premium highlights, CTAs, key metrics
+  - **Text**: Off-white (#fafafa) for readability, muted gray (#888888) for secondary
+  - **Subtle depth**: Very dark grays (#1a1a1a, #222222) for cards and sections
+- **Typography**: Clean sans-serif (Inter or similar), generous line-height, clear size hierarchy
+- **Imagery**: Polished dashboard mockups front and center — the product sells itself
+
+### Ink Theme Integration (Subtle, Not Gimmicky)
+- Quill integrated into the Inklare logo/wordmark (subtle, not cartoon)
+- Thin ink-stroke dividers between sections
+- Very faint paper/parchment texture in backgrounds (barely visible)
+- Ink-spread effect on button hovers (subtle, fast)
+- Black ink as the dominant dark color — this IS an author's tool
 
 ### Animation Philosophy
-- Smooth scroll-triggered animations
-- Parallax depth effects
-- Elements that "reveal" as you scroll (like unveiling a story)
-- Subtle glow/pulse effects on key features
-- NO cheap animations - everything should feel intentional and premium
+- **Restrained and purposeful** — animations serve clarity, not decoration
+- Fade-up reveals on scroll (subtle, 200-300ms)
+- Smooth hover transitions on interactive elements
+- Dashboard tab switching should feel snappy
+- NO particle effects, NO floating elements, NO parallax gimmicks
+- If an animation doesn't improve comprehension, remove it
 
 ### Inspiration References
-- Linear.app (product storytelling)
-- Stripe.com (feature presentation)
-- Framer.com (immersive sections)
-- Notion.so (clean and approachable)
+- Linear.app (clean product storytelling, dark mode done right)
+- Stripe.com (clear feature presentation, trust-building)
+- Notion.so (approachable yet professional)
+- Raycast.com (dark, minimal, product-focused)
 
 ---
 
@@ -52,12 +69,13 @@
 **Subheadline**: "The publishing platform where authors own everything—their readers, their revenue, their future."
 
 **Visual**:
-- Animated book cover that "opens" to reveal a glowing dashboard interface
-- Particles of light/ink floating around
-- Subtle ambient glow effect
+- Large, polished dashboard mockup as the hero image (this IS the product)
+- Show the Books tab with a sample book, clean and inviting
+- Subtle gold glow/highlight on key UI elements
+- Dark background with very faint paper texture
 
-**CTA Button**: "Build Your Inklare" → waitlist signup
-**Secondary link**: "See how it works ↓"
+**CTA Button**: "Join the Waitlist" (gold accent color, high contrast)
+**Secondary link**: "See how it works ↓" (muted, understated)
 
 ---
 
@@ -76,7 +94,7 @@
 3. **"Zero control over your destiny"**
    - "Algorithm changes. Policy updates. Account suspensions. You're always one decision away from losing everything."
 
-**Visual**: Dark, fragmented imagery—broken chains, maze-like interfaces, money flowing away
+**Visual**: Three simple icons representing each pain point. Keep it minimal — the copy does the work.
 
 ---
 
@@ -86,9 +104,8 @@
 **Subheadline**: "One author. One platform. Complete control."
 
 **Visual**:
-- Split screen transformation
-- Left: cluttered Amazon/marketplace chaos
-- Right: clean, glowing Inklare dashboard
+- Clean dashboard mockup showcasing the simple, organized interface
+- Optional: subtle before/after comparison (cluttered → clean) but keep it simple
 
 **Three value props with animated icons**:
 
@@ -103,33 +120,30 @@
 
 ---
 
-### Section 4: The Experience (Immersive Showcase)
+### Section 4: The Experience (Reader Journey)
 
-**Headline**: "Step into your Inklare"
+**Headline**: "What your readers see"
 
-**Full-width immersive section showing the reader experience**:
+**Clean showcase of the reader experience with static/animated mockups**:
 
-**Visual sequence (scroll-triggered)**:
+**Four panels (horizontal scroll or stacked on mobile)**:
 
 1. **The Entrance**
-   - Show animated gates/doors opening (our signature feature)
-   - "Every reader enters YOUR world through a custom animated entrance"
-   - Floating text: "Not a link. An experience."
+   - Mobile mockup showing custom branded welcome screen
+   - "Your branding. Your welcome. Their first impression."
 
 2. **The Reading**
-   - Clean reader interface mockup
-   - Show progress bar, chapter navigation
-   - Highlight: "Offline reading. Bookmarks. Highlights. Notes."
+   - Clean reader interface mockup (mobile)
+   - Show progress bar, chapter navigation, reading settings
+   - "Offline reading. Bookmarks. Highlights. Notes."
 
 3. **The Audio**
-   - Waveform visualization
-   - "Audiobooks and soundtracks integrated seamlessly"
-   - "Sell them separately or bundle. Your choice."
+   - Audio player interface with waveform
+   - "Audiobooks and soundtracks. Sell separately or bundle."
 
 4. **The Connection**
-   - Contact form / reader interaction
-   - "Direct line from reader to author"
-   - "No platform in between"
+   - Contact/inquiry interface
+   - "Direct line from reader to author. No middleman."
 
 ---
 
@@ -182,25 +196,27 @@
 
 **Headline**: "Everything an author needs"
 
-**Animated feature cards (3x4 grid)**:
+**Feature cards (3x4 grid, minimal icons, fade-up on scroll)**:
 
 Row 1:
-- 📚 **Multi-book management** - "Organize your entire catalog"
-- 📖 **Chapter-by-chapter reading** - "Perfect for serialized content"
-- 🎧 **Audio integration** - "Audiobooks and soundtracks"
-- 💰 **Flexible pricing** - "Set any price, change anytime"
+- **Multi-book management** - "Organize your entire catalog"
+- **Chapter-by-chapter reading** - "Perfect for serialized content"
+- **Audio integration** - "Audiobooks and soundtracks"
+- **Flexible pricing** - "Set any price, change anytime"
 
 Row 2:
-- 🔗 **Referral system** - "Built-in viral marketing"
-- 📊 **Reading analytics** - "Know exactly how readers engage"
-- 🔒 **Content protection** - "Your words stay yours"
-- ⚡ **Offline support** - "Readers access anywhere"
+- **Referral system** - "Built-in viral marketing"
+- **Reading analytics** - "Know exactly how readers engage"
+- **Content protection** - "Your words stay yours"
+- **Offline support** - "Readers access anywhere"
 
 Row 3:
-- 🎨 **Custom branding** - "Your design, your domain"
-- 📧 **Direct communication** - "Email your readers directly"
-- 💳 **Stripe payments** - "Keep almost everything"
-- 📱 **Mobile-first** - "Beautiful on every device"
+- **Custom branding** - "Your design, your domain"
+- **Direct communication** - "Email your readers directly"
+- **Stripe payments** - "Keep almost everything"
+- **Mobile-first** - "Beautiful on every device"
+
+**Card style**: Dark card (#1a1a1a), subtle border, gold icon or small accent. On hover: slight lift and border glow.
 
 ---
 
@@ -285,12 +301,13 @@ Row 3:
 **Subheadline**: "Join the authors building their Inklare"
 
 **Visual**:
-- Floating book covers transforming into glowing Inklare dashboards
-- Particle effects rising upward (like pages/ink floating)
+- Clean, centered layout with generous whitespace
+- Subtle dashboard mockup in background (very low opacity, depth effect)
+- Gold accent on the CTA button
 
 **CTA Form**:
-- Email input field
-- Button: "Join the Waitlist"
+- Email input field (dark input, light text)
+- Button: "Join the Waitlist" (gold background, black text)
 - Microcopy: "Be first to know when we launch"
 
 **Social proof under form**:
@@ -321,11 +338,11 @@ Row 3:
 - Open Graph images for social sharing
 
 ### Animation Requirements
-- Scroll-triggered reveals (Intersection Observer or Framer Motion)
-- Parallax effects on key sections
-- Smooth transitions between sections
-- Hover states on all interactive elements
-- Loading state for waitlist form
+- Scroll-triggered fade-up reveals (subtle, 200-300ms ease-out)
+- Smooth hover transitions on all interactive elements (150ms)
+- Dashboard tab switching (instant or fast fade)
+- Loading/success states for waitlist form
+- NO parallax, NO particles, NO floating elements
 
 ### Performance
 - Core Web Vitals optimized
@@ -350,14 +367,13 @@ Row 3:
 
 ## Mockup/Visual Assets Needed
 
-1. **Hero animation**: Book opening to reveal dashboard
-2. **Dashboard mockups**: Books, Analytics, Revenue, Referrals tabs
-3. **Reader experience**: Mobile view of reading interface
-4. **Entrance animation**: Gates/doors opening sequence
-5. **Comparison visual**: Amazon chaos vs Inklare clarity
-6. **Feature icons**: 12 custom icons for feature grid
-7. **Step illustrations**: 3 "how it works" visuals
-8. **Floating UI elements**: For background depth effects
+1. **Hero dashboard**: Large, polished dashboard mockup (Books tab visible)
+2. **Dashboard tabs**: Books, Analytics, Revenue, Referrals views
+3. **Reader mobile mockups**: Welcome screen, reading interface, audio player, contact form
+4. **Comparison visual**: Simple side-by-side (cluttered vs clean)
+5. **Feature icons**: 12 minimal line icons (consistent style, thin stroke)
+6. **Step illustrations**: 3 simple "how it works" visuals (upload, customize, earn)
+7. **Logo/wordmark**: Inklare with subtle quill integration
 
 ---
 
@@ -392,3 +408,4 @@ Row 3:
 
 *This prompt is for Lovable AI to build the Inklare marketing landing page*
 *Created: 2026-02-10*
+*Updated: 2026-02-11 — Refined to clean, professional direction with black ink + gold palette*
