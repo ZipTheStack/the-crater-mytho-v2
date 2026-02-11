@@ -1,0 +1,362 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* The Crater Mythos Design System */
+@layer base {
+  :root {
+    /* Core palette - Deep void with warm flame accents */
+    --background: 0 0% 3%;
+    --foreground: 40 20% 90%;
+    
+    --card: 0 0% 6%;
+    --card-foreground: 40 20% 90%;
+    
+    --popover: 0 0% 8%;
+    --popover-foreground: 40 20% 90%;
+    
+    /* Flame gold - primary accent */
+    --primary: 38 80% 55%;
+    --primary-foreground: 0 0% 3%;
+    
+    /* Ember orange - secondary warmth */
+    --secondary: 25 70% 20%;
+    --secondary-foreground: 40 20% 90%;
+    
+    /* Ash grey - muted elements */
+    --muted: 0 0% 12%;
+    --muted-foreground: 40 10% 50%;
+    
+    /* Deep amber - accent */
+    --accent: 32 90% 45%;
+    --accent-foreground: 0 0% 3%;
+    
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 40 20% 90%;
+    
+    --border: 40 10% 15%;
+    --input: 0 0% 10%;
+    --ring: 38 80% 55%;
+    
+    --radius: 0.25rem;
+    
+    /* Reading mode - Sepia warmth */
+    --reading-bg: 35 30% 95%;
+    --reading-fg: 25 40% 15%;
+    --reading-accent: 38 80% 45%;
+    
+    /* Dark reading mode */
+    --reading-dark-bg: 0 0% 5%;
+    --reading-dark-fg: 40 15% 80%;
+    
+    /* Flame glow effects */
+    --flame-glow: 30 100% 50%;
+    --ember-glow: 15 90% 40%;
+    
+    /* Sidebar - Admin */
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 40 15% 70%;
+    --sidebar-primary: 38 80% 55%;
+    --sidebar-primary-foreground: 0 0% 3%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 40 20% 90%;
+    --sidebar-border: 40 10% 12%;
+    --sidebar-ring: 38 80% 55%;
+  }
+
+  /* WCAG AA compliant light reading mode */
+  .light-reading {
+    --background: 45 25% 96%;
+    --foreground: 25 40% 10%;
+    --card: 45 20% 92%;
+    --card-foreground: 25 40% 10%;
+    --muted: 45 15% 85%;
+    --muted-foreground: 25 20% 30%;
+    --border: 35 12% 75%;
+    --primary: 32 80% 35%;
+    --primary-foreground: 45 25% 98%;
+    --popover: 45 20% 94%;
+    --popover-foreground: 25 40% 10%;
+    --accent: 32 75% 40%;
+    --accent-foreground: 45 25% 98%;
+    --input: 45 15% 90%;
+    --ring: 32 80% 35%;
+  }
+
+  /* WCAG AA compliant sepia reading mode */
+  .sepia-reading {
+    --background: 38 35% 92%;
+    --foreground: 25 35% 12%;
+    --card: 38 30% 88%;
+    --card-foreground: 25 35% 12%;
+    --muted: 38 20% 82%;
+    --muted-foreground: 25 20% 35%;
+    --border: 38 15% 70%;
+    --primary: 32 80% 38%;
+    --primary-foreground: 38 35% 98%;
+    --popover: 38 28% 90%;
+    --popover-foreground: 25 35% 12%;
+    --accent: 32 75% 42%;
+    --accent-foreground: 38 35% 98%;
+    --input: 38 20% 86%;
+    --ring: 32 80% 38%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'EB Garamond', Georgia, serif;
+  }
+  
+  /* Typography scale for reading */
+  .reading-text {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+  }
+  
+  .display-text {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  
+  .ui-text {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-weight: 400;
+  }
+}
+
+@layer components {
+  /* Gate animation */
+  .gate-panel {
+    @apply fixed top-0 h-screen w-1/2 z-50;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+  }
+  
+  .gate-left {
+    @apply left-0;
+    background-position: right center;
+  }
+  
+  .gate-right {
+    @apply right-0;
+    background-position: left center;
+  }
+  
+  /* Flame glow effect */
+  .flame-glow {
+    box-shadow: 
+      0 0 20px hsl(var(--flame-glow) / 0.3),
+      0 0 40px hsl(var(--ember-glow) / 0.2),
+      0 0 60px hsl(var(--flame-glow) / 0.1);
+  }
+  
+  .flame-text {
+    text-shadow: 
+      0 0 10px hsl(var(--flame-glow) / 0.5),
+      0 0 20px hsl(var(--ember-glow) / 0.3);
+  }
+  
+  /* Cinematic button */
+  .btn-enter {
+    @apply relative px-12 py-4 text-lg tracking-[0.3em] uppercase;
+    @apply border border-primary/30 bg-transparent text-primary;
+    @apply transition-all duration-500 ease-out;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  .btn-enter:hover {
+    @apply border-primary bg-primary/10;
+    box-shadow: 
+      0 0 30px hsl(var(--flame-glow) / 0.3),
+      inset 0 0 20px hsl(var(--flame-glow) / 0.1);
+  }
+  
+  /* Fading controls */
+  .controls-fade {
+    @apply transition-opacity duration-500;
+  }
+  
+  .controls-hidden {
+    @apply opacity-0 pointer-events-none;
+  }
+  
+  /* Dog-ear bookmark effect */
+  .dog-ear {
+    @apply relative;
+  }
+  
+  .dog-ear::after {
+    content: '';
+    @apply absolute top-0 right-0 w-8 h-8;
+    background: linear-gradient(135deg, transparent 50%, hsl(var(--primary) / 0.8) 50%);
+    box-shadow: -2px 2px 4px hsl(0 0% 0% / 0.3);
+  }
+  
+  /* Reading progress */
+  .progress-subtle {
+    @apply h-0.5 bg-muted overflow-hidden;
+  }
+  
+  .progress-subtle-bar {
+    @apply h-full bg-primary/50 transition-all duration-300;
+  }
+  
+  /* Admin card */
+  .admin-card {
+    @apply bg-card border border-border rounded-lg p-6;
+    @apply transition-all duration-200;
+  }
+  
+  .admin-card:hover {
+    @apply border-primary/30;
+  }
+  
+  /* Help tooltip */
+  .help-trigger {
+    @apply inline-flex items-center justify-center w-5 h-5 rounded-full;
+    @apply bg-muted text-muted-foreground text-xs cursor-help;
+    @apply hover:bg-primary/20 hover:text-primary transition-colors;
+  }
+}
+
+@layer utilities {
+  /* Cinematic fade in */
+  .fade-in-slow {
+    animation: fadeInSlow 2s ease-out forwards;
+  }
+  
+  @keyframes fadeInSlow {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Ember flicker */
+  .ember-flicker {
+    animation: emberFlicker 3s ease-in-out infinite;
+  }
+  
+  @keyframes emberFlicker {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+  }
+  
+  /* Smoke drift */
+  .smoke-drift {
+    animation: smokeDrift 20s ease-in-out infinite;
+  }
+  
+  @keyframes smokeDrift {
+    0%, 100% { transform: translateX(0) translateY(0); }
+    50% { transform: translateX(10px) translateY(-5px); }
+  }
+  
+  /* Pure mode - absolute minimal */
+  .pure-mode {
+    @apply bg-reading-bg text-reading-fg;
+  }
+  
+  .pure-mode.dark {
+    @apply bg-reading-dark-bg text-reading-dark-fg;
+  }
+}
+
+/* ========================================
+   CONTENT PROTECTION - Anti-piracy measures
+   ======================================== */
+
+/* Disable text selection on protected content */
+.content-protected {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* Print protection - hide content when printing */
+@media print {
+  body {
+    visibility: hidden !important;
+  }
+  
+  body::before {
+    visibility: visible;
+    content: "This content is protected and cannot be printed.";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Hide everything */
+  body * {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+/* Class applied during print attempts */
+.print-protected * {
+  visibility: hidden !important;
+}
+
+/* Screenshot deterrence overlay - shown when window loses focus */
+.screenshot-deterrent {
+  position: fixed;
+  inset: 0;
+  background: hsl(var(--background));
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.screenshot-deterrent::after {
+  content: "Return to app to continue reading";
+  color: hsl(var(--muted-foreground));
+  font-family: 'EB Garamond', serif;
+  font-size: 1.25rem;
+}
+
+/* Invisible watermark layer */
+.content-watermark {
+  position: relative;
+}
+
+.content-watermark::before {
+  content: attr(data-watermark);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 4rem;
+  color: hsl(var(--foreground) / 0.02);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
