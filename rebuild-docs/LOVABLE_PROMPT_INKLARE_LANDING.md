@@ -74,7 +74,7 @@ The landing page should feel like a premium business tool, not a novelty. Let th
 - Subtle gold glow/highlight on key UI elements
 - Dark background with very faint paper texture
 
-**CTA Button**: "Join the Waitlist" (gold accent color, high contrast)
+**CTA Button**: "Get Your Inklare" (gold accent color, high contrast) → links to pricing section or Stripe checkout
 **Secondary link**: "See how it works ↓" (muted, understated)
 
 ---
@@ -373,18 +373,15 @@ Row 3:
 - Subtle dashboard mockup in background (very low opacity, depth effect)
 - Gold accent on the CTA button
 
-**Two CTAs side by side**:
-
-**Primary CTA** (gold, prominent):
+**Primary CTA** (gold, prominent, centered):
 - Button: "Get Your Inklare — $X"
-- Links to Stripe checkout or purchase flow
+- Links to Stripe checkout
 
-**Secondary CTA** (outlined, subtle):
-- Button: "Join the Waitlist"
-- For those not ready to buy yet
-- Email capture form
+**Secondary option** (smaller, below):
+- "Have questions first?" → scrolls to Contact section
+- Or: "Schedule a call" → Calendly link
 
-**Social proof under CTAs**:
+**Social proof under CTA**:
 - "X authors already using Inklare"
 - Author avatar stack (placeholder images)
 - "30-day money-back guarantee"
@@ -427,11 +424,10 @@ Row 3:
 - Success/error states
 - Basic spam protection (honeypot or reCAPTCHA)
 
-**Waitlist Form**:
-- Email capture (required)
-- Name (optional)
-- Store in database or send to email marketing tool (ConvertKit, Mailchimp, etc.)
-- Success state: "You're on the list!"
+**Newsletter/Updates** (optional, footer or contact section):
+- Email capture for product updates (not a waitlist — product is live)
+- "Get tips, updates, and author success stories"
+- Store in email marketing tool (ConvertKit, Mailchimp, etc.)
 
 **Purchase Flow**:
 - Integrate with Stripe Checkout or Stripe Payment Links
@@ -448,7 +444,7 @@ Row 3:
 - Scroll-triggered fade-up reveals (subtle, 200-300ms ease-out)
 - Smooth hover transitions on all interactive elements (150ms)
 - Dashboard tab switching (instant or fast fade)
-- Loading/success states for waitlist form
+- Loading/success states for contact form
 - NO parallax, NO particles, NO floating elements
 
 ### Performance
@@ -506,7 +502,9 @@ Row 3:
 - [ ] All sections implemented
 - [ ] Mobile responsive verified
 - [ ] Animations smooth on all devices
-- [ ] Waitlist form working
+- [ ] Contact form working (sends to hello@inklare.com)
+- [ ] Stripe checkout working (test mode first)
+- [ ] Calendar booking link working
 - [ ] SEO meta tags added
 - [ ] Open Graph images set
 - [ ] Analytics tracking added
@@ -519,3 +517,4 @@ Row 3:
 *Created: 2026-02-10*
 *Updated: 2026-02-11 — Refined to clean, professional direction with black ink + gold palette*
 *Updated: 2026-02-11 — Added one-time purchase pricing, add-ons, contact form, Stripe checkout integration*
+*Updated: 2026-02-11 — Removed waitlist references; this is a live sales page, not coming soon*
