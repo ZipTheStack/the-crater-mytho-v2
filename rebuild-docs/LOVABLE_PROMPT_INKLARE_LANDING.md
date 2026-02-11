@@ -256,16 +256,62 @@ Row 3:
 
 ---
 
-### Section 10: Pricing (Coming Soon)
+### Section 10: Pricing
 
-**Headline**: "Pricing that makes sense"
-**Subheadline**: "We're finalizing our plans. Join the waitlist for early access pricing."
+**Headline**: "One price. Forever yours."
+**Subheadline**: "No subscriptions. No monthly fees. Buy once, own your platform."
 
-**Visual**: Blurred/teaser pricing cards
-- Show 2-3 tier structure (blurred)
-- Hint at: "Starting at $X/month" (placeholder)
+---
 
-**CTA**: "Join Waitlist for Early Access Pricing"
+**Main Product Card** (featured, gold border):
+
+**Inklare Author Edition** — $X (placeholder, e.g., $497 or $697)
+
+**What's Included**:
+- Your own Inklare app (fully branded)
+- AI Ghost Writer (Bring Your Own Key)
+- Built-in social/viral engine
+- Reader analytics dashboard
+- Stripe integration (~97% revenue kept)
+- Referral system
+- Offline reading support
+- 1 year of free updates
+- 1 year of priority support
+
+**CTA Button**: "Get Your Inklare" (gold, prominent)
+**Microcopy**: "30-day money-back guarantee. No questions asked."
+
+---
+
+**Add-Ons Section** (below main card):
+
+**Headline**: "Enhance your Inklare"
+**Subheadline**: "Optional add-ons to take your author platform further"
+
+**Grid of add-on cards** (3-4 columns, smaller than main card):
+
+| Add-On | Description | Price |
+|--------|-------------|-------|
+| **Audiobook Pipeline** | Professional audiobook production (per track) | $X/track |
+| **Soundtrack Creation** | Custom soundtrack for your book (per track) | $X/track |
+| **Ambient Music Pack** | Immersive background audio for reading | $X |
+| **Custom Book Cover** | Professional cover design | $X |
+| **Gallery Graphics** | Custom imagery for your app | $X |
+| **Done-For-You Setup** | We set up your entire Inklare | $X |
+| **Custom Domain Setup** | We configure your custom domain | $X |
+| **Launch Strategy Session** | 1:1 consultation for your book launch | $X |
+| **Author Branding Package** | Logo, social templates, press kit | $X |
+| **White-Glove Migration** | We move your content from Amazon/other | $X |
+| **Beta Reader Management** | Tool for managing ARC/beta readers | $X |
+| **Book Trailer Video** | Professional video trailer for your book | $X |
+
+**Note**: Prices are placeholders — replace with actual pricing before launch.
+
+---
+
+**Founding Member Banner** (above or below pricing):
+- "First 100 authors get lifetime updates + priority support forever"
+- Or: "Launch pricing ends [date] — save $X"
 
 ---
 
@@ -282,7 +328,7 @@ Row 3:
    → "Amazon is a marketplace where you compete with millions. Inklare is YOUR platform. You own the readers, keep ~97% of revenue, and control everything."
 
 3. **"What does it cost?"**
-   → "We're finalizing pricing. Join the waitlist for early access and founding member pricing."
+   → "Inklare is a one-time purchase — no monthly fees, no subscriptions. You buy it, you own it. Includes 1 year of updates and support. Optional add-ons available for audiobook production, custom covers, and more."
 
 4. **"Do I need technical skills?"**
    → "None. If you can use Google Docs, you can use Inklare. We handle all the technical complexity."
@@ -295,24 +341,53 @@ Row 3:
 
 ---
 
-### Section 12: Final CTA (Full viewport)
+### Section 12: Contact
+
+**Headline**: "Questions? Let's talk."
+**Subheadline**: "We're here to help you decide if Inklare is right for you."
+
+**Two-column layout**:
+
+**Left column — Contact Form**:
+- Name (required)
+- Email (required)
+- Subject dropdown: "General question", "Pricing", "Add-ons", "Custom request", "Partnership"
+- Message (required)
+- Button: "Send Message" (gold)
+- Microcopy: "We typically respond within 24 hours"
+
+**Right column — Direct Contact**:
+- Email: hello@inklare.com
+- Schedule a call: [Calendly or similar link]
+- "Prefer to chat? Book a 15-minute call with our team."
+
+---
+
+### Section 13: Final CTA (Full viewport)
 
 **Headline**: "Ready to own your future?"
-**Subheadline**: "Join the authors building their Inklare"
+**Subheadline**: "Join the authors who've taken control of their publishing."
 
 **Visual**:
 - Clean, centered layout with generous whitespace
 - Subtle dashboard mockup in background (very low opacity, depth effect)
 - Gold accent on the CTA button
 
-**CTA Form**:
-- Email input field (dark input, light text)
-- Button: "Join the Waitlist" (gold background, black text)
-- Microcopy: "Be first to know when we launch"
+**Two CTAs side by side**:
 
-**Social proof under form**:
-- "X authors already on the waitlist"
+**Primary CTA** (gold, prominent):
+- Button: "Get Your Inklare — $X"
+- Links to Stripe checkout or purchase flow
+
+**Secondary CTA** (outlined, subtle):
+- Button: "Join the Waitlist"
+- For those not ready to buy yet
+- Email capture form
+
+**Social proof under CTAs**:
+- "X authors already using Inklare"
 - Author avatar stack (placeholder images)
+- "30-day money-back guarantee"
 
 ---
 
@@ -321,9 +396,17 @@ Row 3:
 **Layout**:
 - Logo (Inklare)
 - Tagline: "Your story. Your Inklare."
-- Links: About | Contact | Privacy | Terms
-- Social icons (Twitter, Instagram)
-- Copyright: "© 2026 Inklare. All rights reserved."
+
+**Links columns**:
+- **Product**: Features | Pricing | Add-ons
+- **Support**: Contact | FAQ | Schedule a Call
+- **Legal**: Privacy | Terms | Refund Policy
+- **Connect**: Twitter | Instagram | Email
+
+**Contact info**:
+- hello@inklare.com
+
+**Copyright**: "© 2026 Inklare. All rights reserved."
 
 ---
 
@@ -333,9 +416,33 @@ Row 3:
 - Fully responsive (mobile-first)
 - Fast loading (optimize images, lazy load)
 - Smooth scroll behavior
-- Waitlist form that captures email (integrate with simple backend or use Formspree/similar)
 - SEO-optimized meta tags
 - Open Graph images for social sharing
+
+### Forms & Integration
+
+**Contact Form**:
+- Integrate with Formspree, Netlify Forms, or custom backend
+- Send to hello@inklare.com
+- Success/error states
+- Basic spam protection (honeypot or reCAPTCHA)
+
+**Waitlist Form**:
+- Email capture (required)
+- Name (optional)
+- Store in database or send to email marketing tool (ConvertKit, Mailchimp, etc.)
+- Success state: "You're on the list!"
+
+**Purchase Flow**:
+- Integrate with Stripe Checkout or Stripe Payment Links
+- "Get Your Inklare" button → Stripe checkout page
+- On success: redirect to thank you page / onboarding
+- On cancel: return to pricing section
+- Support for discount codes (Stripe built-in)
+
+**Calendar Integration** (Contact section):
+- Embed Calendly or Cal.com for "Schedule a Call"
+- Or simple link to external booking page
 
 ### Animation Requirements
 - Scroll-triggered fade-up reveals (subtle, 200-300ms ease-out)
@@ -377,18 +484,20 @@ Row 3:
 
 ---
 
-## Waitlist Integration
+## Post-Purchase Flow
 
-**Fields to capture**:
-- Email (required)
-- Name (optional)
-- "I am an author" checkbox (optional)
-- "How did you hear about us?" dropdown (optional)
+**Thank You Page** (after Stripe checkout success):
+- "Welcome to Inklare!"
+- "Your Inklare is being set up. Check your email for next steps."
+- Quick start guide or onboarding video
+- Link to schedule setup call (if they purchased done-for-you setup)
+- Social share: "I just got my Inklare!"
 
-**Success state**:
-- "You're on the list!"
-- "We'll notify you the moment Inklare launches."
-- Social share buttons
+**Email Sequence** (post-purchase):
+1. Order confirmation + receipt
+2. Getting started guide (24 hours later)
+3. "Need help?" check-in (3 days later)
+4. Feature spotlight series (weekly for first month)
 
 ---
 
@@ -409,3 +518,4 @@ Row 3:
 *This prompt is for Lovable AI to build the Inklare marketing landing page*
 *Created: 2026-02-10*
 *Updated: 2026-02-11 — Refined to clean, professional direction with black ink + gold palette*
+*Updated: 2026-02-11 — Added one-time purchase pricing, add-ons, contact form, Stripe checkout integration*
